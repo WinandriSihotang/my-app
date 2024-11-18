@@ -71,9 +71,10 @@ import getAllProductCategories from '../../services/getAllProductCategories'
   return (
     <>
       <Navbar onSearchChange={handleSearchChange}/>
-      <div className="w-full h-64">
+      <div className="min-h-screen bg-white">
+        <div className="relative h-64 overflow-hidden mb-4">
       <img
-        src="/public/assets/images/bbb.jpg" 
+        src="/public/assets/images/ccc.jpg" 
         alt="Banner"
         className="w-full h-full object-cover"
       />
@@ -92,7 +93,11 @@ import getAllProductCategories from '../../services/getAllProductCategories'
           <ProductList products={products} isPending={isPending}/>
       </div>
     </section>
-    </>
+  </div>
+
+
+
+  </>
   )
 }
 export default Products
