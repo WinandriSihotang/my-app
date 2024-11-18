@@ -71,6 +71,13 @@ import getAllProductCategories from '../../services/getAllProductCategories'
   return (
     <>
       <Navbar onSearchChange={handleSearchChange}/>
+      <div className="w-full h-64">
+      <img
+        src="/public/assets/images/bbb.jpg" 
+        alt="Banner"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
       <div className='px-24 py-4 gap-4 mt-4 flex-wrap'>
           <h3 className='font-medium'>Kategori</h3>
