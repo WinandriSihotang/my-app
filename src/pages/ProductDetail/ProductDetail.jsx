@@ -25,7 +25,7 @@ export default function ProductDetail() {
           </Link>
           <h4 className='text-[32px] text-[#580c12]  font-medium'>{product.name ?? 'No Label'}</h4>
     </div>
-    <div className='flex gap-[30px] px-24'>
+    <div className='flex gap-[30px] px-24 mb-4'>
             <div className=''>
                 {/* <img src={product.imageUrl ?? (product.name ?? 'No Name')} alt={product.name ?? 'No Name'} className='block spect-[138/100] max-w-[400px] object-cover'/> */}
                 <img src={product.imageUrl ?? (product.name ?? 'No Name')} alt={product.name ?? 'No Name'} className='block w-[500px] h-[500px] object-cover'/>
@@ -71,13 +71,6 @@ export default function ProductDetail() {
             </div>
         </div>
         <br />
-        <div className="w-full h-64">
-      <img
-        src="/public/assets/images/kosongan-removebg-preview.png" 
-        alt="Banner"
-        className="w-full h-full object-cover"
-      />
-    </div>
    </>
   )
 }

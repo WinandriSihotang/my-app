@@ -71,13 +71,6 @@ import getAllProductCategories from '../../services/getAllProductCategories'
   return (
     <>
       <Navbar onSearchChange={handleSearchChange}/>
-      <div className="min-h-screen bg-white">
-        <div className="relative h-64 overflow-hidden mb-4">
-      <img
-        img src="/images/bbb.jpg" alt="Banner"
-        className="w-full h-full object-cover"
-      />
-    </div>
 
       <div className='px-24 py-4 gap-4 mt-4 flex-wrap'>
           <h3 className='font-medium'>Kategori</h3>
@@ -92,10 +85,6 @@ import getAllProductCategories from '../../services/getAllProductCategories'
           <ProductList products={products} isPending={isPending}/>
       </div>
     </section>
-  </div>
-
-
-
   </>
   )
 }

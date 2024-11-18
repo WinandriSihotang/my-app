@@ -11,33 +11,34 @@ export default function Navbar({ onSearchChange }) {
   };
 
   return (
-    <nav className="grid grid-cols-3 justify-between px-24 py-4 bg-[#E5D2B8] items-center">
+    <nav className="grid grid-cols-3 justify-between px-24 py-4 bg-[#580c12] items-center">
       <ul>
         <li className="flex items-center justify-center">
-          <Link to="/" className="text-[#725C3A] hover:text-[#D2AB80] active:text-[#1d2342]">
+          <Link to="/" className="text-[#fafafc] hover:text-[#fdf6b2] active:text-[#1d2342]">
             Home
           </Link>
         </li>
       </ul>
-      <ul className="flex justify-center items-center">
+      <ul className="flex justify-center items-center ">
         <li className="w-full">
           <input
             type="text"
-            className="text-black active:text-black focus:text-black px-4 py-2 w-full"
+            className="text-black active:text-black focus:text-black px-4 py-2 w-full rounded-full"
             name="search"
             id={inputId}
-            placeholder="Search product..."
+            placeholder="Cari Parfume..."
             onChange={handleSearchInput}
           />
         </li>
+      
       </ul>
       {!isLoggedIn ? (
         <ul className="flex gap-2 justify-end">
-          <li className="text-[#725C3A] hover:text-[#D2AB80] active:text-[#ffffff]">
+          <li className="text-[#fafafc] hover:text-[#fdf6b2] active:text-[#1d2342]">
             <button onClick={login}>Sign in</button>
           </li>
           <li>
-            <Link className="text-[#725C3A] hover:text-[#D2AB80] active:text-[#ffffff]" to="/signup">
+            <Link className="text-[#fafafc] hover:text-[#fdf6b2] active:text-[#1d2342]" to="/signup">
               Sign up
             </Link>
           </li>
@@ -45,22 +46,23 @@ export default function Navbar({ onSearchChange }) {
       ) : (
         <ul className="flex justify-end gap-2">
           <li>
-            <Link className="text-[#725C3A] hover:text-[#D2AB80] active:text-[#ffffff]" to="/cart">
+            <Link className="text-[#fafafc] hover:text-[#fdf6b2] active:text-[#1d2342]" to="/cart">
               Cart
             </Link>
           </li>
           <li>
-            <Link to="/orders" className="text-[#725C3A] hover:text-[#D2AB80] active:text-[#ffffff]">
+            <Link to="/orders" className="text-[#fafafc] hover:text-[#fdf6b2] active:text-[#1d2342]">
               My Orders
             </Link>
           </li>
           <li>
-            <button onClick={logout} className="text-[#725C3A] hover:text-[##D2AB80] active:text-[#ffffff]">
+            <button onClick={logout} className="text-[#fafafc] hover:text-[#fdf6b2] active:text-[#1d2342]">
               Sign out
             </button>
           </li>
         </ul>
       )}
-    </nav>
+    </nav>
+
   );
 }
