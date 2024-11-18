@@ -74,8 +74,7 @@ import getAllProductCategories from '../../services/getAllProductCategories'
       <div className="min-h-screen bg-white">
         <div className="relative h-64 overflow-hidden mb-4">
       <img
-        src="/public/assets/images/ccc.jpg" 
-        alt="Banner"
+        img src="/images/bbb.jpg" alt="Banner"
         className="w-full h-full object-cover"
       />
     </div>
